@@ -9,10 +9,29 @@ body {
   background-color: rgb(77, 74, 243);
 }
 
-.category-aktif{
+.category-aktif {
   background-color: rgb(77, 74, 243);
   color: white;
 }
+
+.btn-info {
+  background-color: rgb(77, 74, 243);
+}
+
+@media only screen and (max-height: 1000px) {
+  .hasil {
+    height: 450px;
+  }
+
+  .menu {
+    height: 550px;
+  }
+}
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -36,17 +36,17 @@ export default class ListCategories extends Component {
         const { categories } = this.state
         const { changecategory, pilihcategory } = this.props
         return (
-            <Col md={2} mt="2">
+            <Col md={2} className="mt-4">
                 <h4><strong>Kategori</strong> </h4>
                 <hr />
                 <ListGroup>
                     {categories && categories.map((category) => (
 
-                        <ListGroup.Item 
-                        key={category.id} 
-                        onClick={() => changecategory(category.nama)}
-                        className={pilihcategory === category.nama && "category-aktif"}
-                        style={{cursor:'pointer'}}
+                        <ListGroup.Item
+                            key={category.id}
+                            onClick={() => changecategory(category.nama)}
+                            className={pilihcategory === category.nama && "category-aktif"}
+                            style={{ cursor: 'pointer' }}
                         >
                             <Icon nama={category.nama} /> {category.nama}
                         </ListGroup.Item>
